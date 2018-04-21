@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MovieInfo</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="main">
+ 
+
+       <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                 <ul class="nav navbar-nav">
+                    <li class="navbar-header"><a href="index.html" class="navbar-brand">MovieInfo</a></li>
+                    <li><button class="btn btn-info white_theme">White Theme</button></li>
+                    <li><button class="btn btn-info black_theme">Black Theme</button></li>
+                    <li><button class="btn btn-success" id="save_to_LocalStorage">Add to favorite</button></li>
+                 </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+     	<div class="well" id="movie"></div>
+     </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/main.js"></script> 
+     <script>getMovie()</script> 
+</body>
+</html>

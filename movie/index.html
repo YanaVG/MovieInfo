@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MovieInfo</title>
+    <!-- <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/united/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/cyborg/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="main">
+    <nav class="navbar navbar-default">
+    	<div class="container">
+    		<div class="navbar-header">
+                 <ul class="nav navbar-nav">
+                 	<li><a href="index.html" class="navbar-brand">MovieInfo</a></li>
+                 	<li><a href="#" class="nowPlaying">Now Playing</a></li>
+                 	<li class="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Genres<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                            <li><a href="#" class="action" id="action">Action</a></li>
+                            <li><a href="#" class="adventure" id="adventure">Adventure</a></li>
+                            <li><a href="#" class="animation" id="animation">Animation</a></li>
+                            <li><a href="#" class="comedy" id="comedy">Comedy</a></li>
+                            <li><a href="#" class="crime" id="crime">Crime</a></li>
+                            <li><a href="#" class="drama" id="drama">Drama</a></li>
+                            <li><a href="#" class="family" id="family">Family</a></li>
+                            <li><a href="#" class="fantasy" id="fantasy">Fantasy</a></li>
+                            <li><a href="#" class="history" id="history">History</a></li>
+                            <li><a href="#" class="music" id="music">Music</a></li>
+                            <li><a href="#" class="romance" id="romance">Romance</a></li>
+                            <li><a href="#" class="scifi" id="scifi">Science Fiction</a></li>
+                            <li><a href="#" class="thriller" id="thriller">Thriller</a></li>
+                       </ul>
+                    </li>
+                 	<li><button class="btn btn-info white_theme">White Theme</button></li>
+                 	<li><button class="btn btn-info black_theme">Black Theme</button></li>
+                 </ul>
+    	   </div>
+    	</div>
+    </nav>
+    <div class="container">
+    	<div class="jumbotron">
+    		<h3 class="text-center search-movie">Seach for any movie</h3>
+    		<form id="searchForm">
+    			<input type="text" class="form-control" id="searchText" placeholder="Search Movie ...">
+    		</form>
+    	</div>
+    </div>
+    <div class="container">
+     	<div class="row" id="movies"></div>
+     </div>
+    </div>
+     <script
+	 src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+     <script src="js/main.js"></script> 
+</body>
+</html>
